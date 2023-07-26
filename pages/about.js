@@ -144,16 +144,19 @@ export default function About() {
               md={6}
             >
               <div style={{ width: "100%" }}>
-                <iframe
+              <iframe
                   width="100%"
-                  height="600"
+                  height="500"
                   frameBorder="0"
                   scrolling="no"
                   marginHeight="0"
                   marginWidth="0"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=172%20De%20Villers%20Johannesburg%20,%20Turffontein+(T&amp;l%20Upholstering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                ></iframe>
-              </div>
+                  style={{ background:'white' }}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14314.150071364438!2d28.031408912357097!3d-26.244212765602267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f20268f78fb%3A0x50ee91b36139476c!2s68%20De%20Villiers%20St%2C%20Turffontein%2C%20Johannesburg%20South%2C%202140!5e0!3m2!1sen!2sza!4v1690351105321!5m2!1sen!2sza"
+                  // src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=68%20De%20Villiers%20Johannesburg%20,%20Turffontein+(T&amp;l%20Upholstering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  // <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14314.150071364438!2d28.031408912357097!3d-26.244212765602267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f20268f78fb%3A0x50ee91b36139476c!2s68%20De%20Villiers%20St%2C%20Turffontein%2C%20Johannesburg%20South%2C%202140!5e0!3m2!1sen!2sza!4v1690351105321!5m2!1sen!2sza" width="100%" height="450px" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+             ></iframe>
+             </div>
             </Grid>
         
             <Grid
@@ -182,7 +185,7 @@ export default function About() {
             </Typography>
             <Typography sx={{ fontSize: "16px", margin: "1rem 0" }}>
               {" "}
-              172 De Villiers Street
+              68 De Villiers Street & Park Crescent
             </Typography>
           </Box>
           <Box>
@@ -209,7 +212,7 @@ export default function About() {
             </Typography>
             <Typography sx={{ fontSize: "16px", margin: "1rem 0" }}>
               {" "}
-              Monday - Friday: 9am - 5pm
+              Monday - Saturday: 9:30AM - 5:30PM
             </Typography>
           </Box>
           <Typography
