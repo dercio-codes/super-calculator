@@ -40,7 +40,7 @@ export default function Gallery() {
             </Typography>
             <Typography sx={{ fontSize: "16px", margin: "1rem 0" }}>
               {" "}
-              172 De Villiers Street
+              68 De Villiers Street & Park Crescent
             </Typography>
           </Box>
           <Box>
@@ -67,7 +67,7 @@ export default function Gallery() {
             </Typography>
             <Typography sx={{ fontSize: "16px", margin: "1rem 0" }}>
               {" "}
-              Monday - Friday: 9am - 5pm
+              Monday - Saturday: 9:30AM - 5:30PM
             </Typography>
           </Box>
           <Typography

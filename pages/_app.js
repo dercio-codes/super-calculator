@@ -53,10 +53,17 @@ const Navbar = () => {
       }}
     >
       {/* <img src="/logo.png" style={{ objectFit:'contain' , width:'200px' , height:'50px' }} /> */}
-      <Box sx={{  height:'50px' , background:"" , width:'200px' ,  backgroundImage: "url(/logo.png)",
+      <Link onClick={()=>{
+        setOpen(false)
+      }} href="/">
+          <a style={{ width:'' }} >
+          <Box sx={{  height:'50px' , background:"" , width:'200px' ,  backgroundImage: "url(/logo.png)",
            backgroundSize: "cover",
           backgroundPosition: "center", }}>
       </Box>
+          </a>
+        </Link>
+
       <IconButton
         sx={{
           display: { lg: "none", xs: "flex" },
@@ -86,7 +93,9 @@ const Navbar = () => {
            backgroundSize: "cover",
           backgroundPosition: "center", }}>
       </Box>
-      <Link style={{ width:'100%' }} href="/about">
+      <Link onClick={()=>{
+        setOpen(false)
+      }} style={{ width:'100%' }} href="/about">
           <a style={{ width:'100%' }} >
             <Typography
               sx={{ width:'100%', textAlign:'center', '&:hover':{ background:'rgb(29, 93, 155)' } , fontSize: "14px", padding: "1.5rem 0", FontWeight: 3600 }}
@@ -95,7 +104,9 @@ const Navbar = () => {
             </Typography>
           </a>
         </Link>
-        <Link style={{ width:'100%' }} href="/#services">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} style={{ width:'100%' }} href="/#services">
           <a style={{ width:'100%' }} >
             <Typography
               sx={{ width:'100%', textAlign:'center', '&:hover':{ background:'rgb(29, 93, 155)' } , fontSize: "14px", padding: "1.5rem 0", FontWeight: 3600 }}
@@ -105,7 +116,9 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Link style={{ width:'100%' }} href="/gallery">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} style={{ width:'100%' }} href="/gallery">
           <a style={{ width:'100%' }} >
             <Typography
               sx={{ width:'100%', textAlign:'center', '&:hover':{ background:'rgb(29, 93, 155)' } , fontSize: "14px", padding: "1.5rem 0", FontWeight: 3600 }}
@@ -115,7 +128,9 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Link style={{ width:'100%' }} href="/#contact">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} style={{ width:'100%' }} href="/#contact">
           <a style={{ width:'100%' }} >
             <Typography
               sx={{ width:'100%', textAlign:'center', '&:hover':{ background:'rgb(29, 93, 155)' } , fontSize: "14px", padding: "1.5rem 0", FontWeight: 3600 }}
@@ -136,7 +151,9 @@ const Navbar = () => {
           width: "30%",
         }}
       >
-        <Link href="/about">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} href="/about">
           <a>
             <Typography
               sx={{ fontSize: "14px", margin: "0", FontWeight: 3600 }}
@@ -145,7 +162,9 @@ const Navbar = () => {
             </Typography>
           </a>
         </Link>
-        <Link href="/#services">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} href="/#services">
           <a>
             <Typography
               sx={{ fontSize: "14px", margin: "0", FontWeight: 3600 }}
@@ -155,7 +174,9 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Link href="/gallery">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} href="/gallery">
           <a>
             <Typography
               sx={{ fontSize: "14px", margin: "0", FontWeight: 3600 }}
@@ -165,7 +186,9 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Link href="/#contact">
+        <Link onClick={()=>{
+          setOpen(false)
+        }} href="/#contact">
           <a>
             <Typography
               sx={{ fontSize: "14px", margin: "0", FontWeight: 3600 }}
