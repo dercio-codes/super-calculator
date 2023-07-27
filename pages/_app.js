@@ -12,6 +12,8 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
+import Head from "next/head";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   const [loaded, setLoaded] = useState(false);
@@ -22,10 +24,26 @@ function MyApp({ Component, pageProps }) {
 
   if (loaded) {
     return (
-      <Box >
+      <main >
+            <Head>
+        <link rel="icon" sizes="32x32" type="image/x-icon" href="/logo.png"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta property="og:type" content="article" />
+
+      <meta property="og:title" content="T & L Upholstery" />
+
+      <meta property="og:description" content="At T & L Upholstery we do Re-upholstery and manufacturing. We Pride ourselves on  providing the best Quality of Service in the Upholstery industry. We Specialize in various Interior Upholstery projects as well as outsourced Business Projects in the Upholstery Divisions." />
+
+      <meta property="og:image" content="www.tlupholstery.co.za/logo.png" />
+
+      <meta property="og:url" content="www.misgudedsa.co.za" />
+
+      <meta property="og:site_name" content="T & L Upholstery" />
+      <title>T & L Upholstery</title>
+      </Head>
         <Navbar />
         <Component {...pageProps} />
-      </Box>
+      </main>
     );
   }
 }
