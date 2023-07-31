@@ -30,11 +30,10 @@ export default function Home() {
             md={6}
           >
             <Typography sx={{ fontSize: 50, fontWeight: 600 }}>
-              Crafted with excellent Woor
+              Crafted with excellent Wood
             </Typography>
             <Typography sx={{ fontSize: 21, margin: "12px 0" }}>
-              We use the best wood and materials to ensure we supply good aulity
-              standard work.
+              We use the best wood and materials to ensure we supply good quality standard work.
             </Typography>
             <Box sx={{ display: "flex" }}>
               <Button
